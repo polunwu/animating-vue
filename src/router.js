@@ -21,6 +21,12 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () =>
         import(/* webpackChunkName: "about" */ './views/List.vue')
+    },
+    {
+      path: '/drawer',
+      name: 'drawer',
+      component: () =>
+        import(/* webpackChunkName: "list" */ './views/Drawer.vue')
     }
   ]
 })
